@@ -31,7 +31,9 @@ $env:CIRCUIT_TEXTBOOK_PDF = "C:\path\to\电路分析基础（第2版）.pdf"
 
 ## 安装
 
-将仓库克隆到本地，然后在 Codex 中安装/加载插件目录。也可以把 `skills/` 下的单个 skill 目录复制到 `$CODEX_HOME/skills`。
+优先使用 Codex 插件安装；使用 IDE 扩展或 CC-Switch 时按各自方式安装 6 个 skills。不要同时安装插件版和同名用户级 skills，以免出现重复项。
+
+Windows、标准 Codex、IDE skills 直装和 CC-Switch 的完整步骤见 [安装教程](docs/INSTALLATION.md)。安装命令、目录位置、更新和卸载均以该教程为准。
 
 运行脚本需要 Python 3；教材页面渲染需要 Poppler 的 `pdfinfo` 与 `pdftoppm`。
 
@@ -47,14 +49,6 @@ $env:CIRCUIT_TEXTBOOK_PDF = "C:\path\to\电路分析基础（第2版）.pdf"
 
 ```text
 使用 $diagnose-circuit-answer 检查这份解答，定位第一个实质错误，说明错误传播，给出修正解答并用不同方法复验。
-```
-
-## 验证
-
-```powershell
-$env:PYTHONUTF8 = "1"
-python C:\path\to\skill-creator\scripts\quick_validate.py skills\solve-circuit-textbook
-python C:\path\to\plugin-creator\scripts\validate_plugin.py .
 ```
 
 ## 版权说明

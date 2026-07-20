@@ -1,0 +1,20 @@
+{
+  "name": "circuit-skill",
+  "interface": {
+    "displayName": "Circuit Skill"
+  },
+  "plugins": [
+    {
+      "name": "circuit-skill",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education"
+    }
+  ]
+}
