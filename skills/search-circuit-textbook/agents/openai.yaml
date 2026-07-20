@@ -1,0 +1,4 @@
+interface:
+  display_name: "Circuit Textbook Search"
+  short_description: "Locate and verify evidence in the scanned circuit textbook"
+  default_prompt: "Use $search-circuit-textbook to locate and verify the relevant material in my circuit analysis textbook."

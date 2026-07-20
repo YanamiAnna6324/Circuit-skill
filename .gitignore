@@ -1,0 +1,6 @@
+# The textbook is local, copyrighted input and must never be published.
+*.pdf
+tmp/
+output/
+__pycache__/
+*.pyc

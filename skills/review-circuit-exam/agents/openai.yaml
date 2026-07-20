@@ -1,0 +1,4 @@
+interface:
+  display_name: "Circuit Exam Review"
+  short_description: "Extract circuit concepts, patterns, pitfalls, and exam checks"
+  default_prompt: "Use $review-circuit-exam to summarize the concepts, patterns, pitfalls, and exam checks from this solution."

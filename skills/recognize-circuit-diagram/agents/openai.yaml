@@ -1,0 +1,4 @@
+interface:
+  display_name: "Circuit Diagram Recognition"
+  short_description: "Extract and verify topology from a circuit diagram image"
+  default_prompt: "Use $recognize-circuit-diagram to convert this circuit image into a verified topology description."

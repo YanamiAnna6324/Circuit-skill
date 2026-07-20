@@ -1,0 +1,23 @@
+{
+  "width": 640,
+  "height": 360,
+  "title": "一阶 RC 电路（重绘）",
+  "components": [
+    {"id": "Vs", "type": "voltage_source", "from": [120, 260], "to": [120, 100], "label": "u_s", "value": "10 V", "polarity": "-+"},
+    {"id": "R1", "type": "resistor", "from": [120, 100], "to": [360, 100], "label": "R", "value": "2 kOhm"},
+    {"id": "C1", "type": "capacitor", "from": [360, 100], "to": [360, 260], "label": "C", "value": "10 uF"}
+  ],
+  "wires": [
+    {"points": [[120, 260], [360, 260]]}
+  ],
+  "nodes": [
+    {"at": [120, 100], "label": "n1"},
+    {"at": [360, 100], "label": "n2"},
+    {"at": [120, 260], "label": "0"},
+    {"at": [360, 260]}
+  ],
+  "annotations": [
+    {"kind": "current", "from": [180, 70], "to": [260, 70], "label": "i"},
+    {"kind": "voltage", "from": [400, 110], "to": [400, 250], "label": "u_C"}
+  ]
+}

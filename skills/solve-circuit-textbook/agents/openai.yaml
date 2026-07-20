@@ -1,0 +1,4 @@
+interface:
+  display_name: "Textbook Circuit Solver"
+  short_description: "Ground circuit solutions in the textbook and review exams"
+  default_prompt: "Use $solve-circuit-textbook to solve this circuit problem with textbook evidence and an exam-focused review."

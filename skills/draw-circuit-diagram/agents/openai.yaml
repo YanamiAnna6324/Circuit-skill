@@ -1,0 +1,4 @@
+interface:
+  display_name: "Circuit Diagram Drawing"
+  short_description: "Render a verified circuit topology as a clear SVG schematic"
+  default_prompt: "Use $draw-circuit-diagram to create a clear and reproducible schematic for this circuit."
