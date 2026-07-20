@@ -16,7 +16,8 @@ description: Solve Chinese circuit-analysis questions for postgraduate entrance 
 5. 选择教材使用的方法并求解。先列适用条件，再列方程，最后化简并代入单位。
 6. 用至少一种独立方法自检：量纲、KCL/KVL、初终值、功率守恒、极限情况、数量级或回代。
 7. 仅在重绘能消除歧义、说明等效变换或展示切换状态时调用 `$draw-circuit-diagram`。
-8. 调用 `$review-circuit-exam`，始终在答案末尾输出知识点、规律总结、考试要点、易错点和快速自检。
+8. 在输出前调用 `$diagnose-circuit-answer` 对当前草稿做一次自我诊断。要求从题目与教材独立重建基线，并采用与主解不同的复验；若发现错误，修正后再完整复验一次，不得无限递归。
+9. 调用 `$review-circuit-exam`，始终在答案末尾输出知识点、规律总结、考试要点、易错点和快速自检。
 
 ## 方法优先级
 
@@ -40,6 +41,8 @@ python scripts/check_answer.py answer.md
 ```
 
 脚本失败表示答案不完整，补齐缺少的区段。
+
+自我诊断的内部报告无需完整展示给用户，但必须在“结果自检”中写出实际使用的独立检查和结论。无法构造独立检查时，不得声称答案已通过自检。
 
 ## 失败处理
 

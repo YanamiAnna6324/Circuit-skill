@@ -1,6 +1,6 @@
 {
   "name": "circuit-skill",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Textbook-grounded circuit analysis skills for Chinese postgraduate entrance exam preparation.",
   "author": {
     "name": "Circuit Skill Contributors"
@@ -11,14 +11,14 @@
   "interface": {
     "displayName": "Circuit Skill",
     "shortDescription": "Textbook-grounded circuit analysis and exam review.",
-    "longDescription": "Solve circuit-analysis problems from a local textbook scan, recognize and redraw schematics, and finish every answer with concepts, patterns, pitfalls, and exam checks.",
+    "longDescription": "Solve and diagnose circuit-analysis answers from a local textbook scan, recognize and redraw schematics, independently verify results, and finish with concepts, patterns, pitfalls, and exam checks.",
     "developerName": "Circuit Skill Contributors",
     "category": "Education",
     "capabilities": ["Read", "Write"],
     "defaultPrompt": [
       "请优先依据教材解答这道电路题，并列出知识点与考点。",
-      "识别这张电路图，核对拓扑后再求解。",
-      "把这个电路描述绘制成清晰的 SVG 电路图。"
+      "诊断这份错误答案，定位第一个错误并给出修正解答。",
+      "识别这张电路图，核对拓扑后再求解。"
     ]
   }
 }

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Circuit Answer Diagnosis"
+  short_description: "Find, explain, correct, and independently verify circuit errors"
+  default_prompt: "Use $diagnose-circuit-answer to diagnose this circuit solution, correct its first real error, and verify the repaired answer."

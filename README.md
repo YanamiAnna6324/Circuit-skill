@@ -11,6 +11,7 @@
 | `recognize-circuit-diagram` | 从图片提取元件、节点、支路、方向和歧义 |
 | `draw-circuit-diagram` | 从 JSON 拓扑生成可编辑、可复核的 SVG 电路图 |
 | `review-circuit-exam` | 提炼知识点、规律、考试要点、易错点和快速自检 |
+| `diagnose-circuit-answer` | 诊断错误答案、定位首个错误、修正解答并独立复验 |
 
 ## 教材设置
 
@@ -41,6 +42,12 @@ $env:CIRCUIT_TEXTBOOK_PDF = "C:\path\to\电路分析基础（第2版）.pdf"
 ```
 
 含图片的题目会先调用 `$recognize-circuit-diagram`。查教材时，目录索引只能定位候选页，公式与适用条件必须通过正文扫描页视觉核验。
+
+诊断错误答案或检查 agent 自己的解答：
+
+```text
+使用 $diagnose-circuit-answer 检查这份解答，定位第一个实质错误，说明错误传播，给出修正解答并用不同方法复验。
+```
 
 ## 验证
 
